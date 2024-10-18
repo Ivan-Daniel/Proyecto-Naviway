@@ -1,0 +1,62 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Pantalla de Bienvenida */
+#welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 1s ease-in-out;
+}
+
+#welcome-screen h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Animación de Carga */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #4CAF50;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Ocultar el mapa al inicio */
+#map-container {
+    display: none;
+    padding: 20px;
+}
+
+/* Estilos del Mapa */
+#map {
+    width: 100%;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
